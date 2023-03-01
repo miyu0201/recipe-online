@@ -1,38 +1,211 @@
-.App {
+.App-dark {
   text-align: center;
+  background-color: #1a3a41;
+  height: 100%;
+  min-height: 100vh;
+  color:white;
 }
+
+.App-light{
+  text-align: center;
+  background-color: #feb300;
+ 
+  height: 100%;
+  min-height: 100vh;
+  color:#1a3a41;
+}
+
+.App.addToggleClass{
+background-color: #feb300;
+}
+
+
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.header{
+  display:flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap:20px;
+  height:120px;
+  padding: 40px;
+  box-shadow: 0px 1px 4px rgba(233, 241, 242, 0.968);
+  margin-bottom: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.title{
+  margin-right:auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  font-style: oblique;
+  font-size:50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.theme-button-dark{
+ 
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color:#feb200e0;
+  color:white;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.theme-button-light{
+  
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color:#1a3a41;
+  color:white;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.myFav-button-dark{
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color:#feb200e0;
+  color:white;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.myFav-button-light{
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color:#1a3a41;
+  color:white;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search{
+  display:flex;
+  flex-direction: row;
+  gap:20px;
+  justify-content: center;
+}
+
+.search-input{
+  padding: 15px 30px;
+  font-size: 20px;
+  width:40%;
+}
+
+.search-button-dark{
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color:#feb200e0;
+  color:white;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.search-button-light{
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color:#1a3a41;
+  color:white;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.loading {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.recipe-elements{
+  margin:20px 40px;
+  display:flex;
+  flex-direction: row;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.recipe-element{
+  margin:10px 20px;
+ height:370px;
+ width: 350px;
+ background-color: #ffffff;
+ display:flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+
+.recipe-title{
+  font-size: 18px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ color:black;
+ text-align:center;
+}
+
+.search-fav-input{
+  padding: 15px 30px;
+  font-size: 20px;
+  width:60%;
+  margin-left: 20%;
+  margin-bottom:4opx;
+}
+
+
+.favourite-button-dark{
+  padding: 10px 0px;
+  font-size: 19px;
+  font-weight: 700;
+  background-color:#feb200e0;
+  color:white;
+  border:none;
+  cursor: pointer;
+ 
+}
+
+.favourite-button-light{
+  padding: 10px 10px;
+  font-size: 19px;
+  font-weight: 700;
+  background-color:#1a3a41;
+  color:white;
+  border:none;
+  cursor: pointer;
+ 
+}
+.favourite-elements{
+  margin:20px 30px;
+  display:flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+.favourite-element{
+  margin:10px 20px;
+  height:350px;
+  width: 280px;
+  background-color: #ffffff;
+  display:flex;
+   flex-direction: column;
+   gap:10px;
+   justify-content: space-around;
+   box-shadow: 4px 4px 4px 4px rgba(233, 241, 242, 0.968);
 }
